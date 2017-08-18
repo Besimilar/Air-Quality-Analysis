@@ -38,7 +38,7 @@ besimilar/advanced-data-analysis:pipeline
 		* EPA API params: 
 			* EPAUSERNAME: EPA API username
 			* EPAPASSWORD: EPA API password
-			* BDATE: the first day of dataset (default: 20130101)
+			* BDATE: the first day of dataset (better within 3 years)
 			* EDATE: the last day of dataset: (default: current date)
 		* Azure params:
 			* ACCOUNTNAME: azure storage account name

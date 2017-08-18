@@ -21,7 +21,7 @@ besimilar/advanced-data-analysis:aqi
 		* EPA API params: 
 			* EPAUSERNAME: EPA API username
 			* EPAPASSWORD: EPA API password
-			* BDATE: the first day of dataset (default: 20130101)
+			* BDATE: the first day of dataset (better within 3 years)
 			* EDATE: the last day of dataset (default: current date)
 		* Other default params:
 			* change them in "/Final/2-Pipeline/config.json"
