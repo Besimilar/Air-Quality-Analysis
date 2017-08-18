@@ -2,19 +2,27 @@
 INFO 7390
 
 ## Team 3
-Hongwei Hu:
+Hongwei Hu: 
 
-* Data Fetching & Upload Automation
-* Azure Machine Learning Model Building & Publishing
-* Pipelines for Regular Fetching & Retraining
-* Deployment: Docker, Flask API
+* Report: 1-Hongwei_Hu.docx
+* PPT: 1-Hongwei_Hu.pptx
+* Video:
+* Work:
+	* Data Fetching & Upload Automation
+	* Azure Machine Learning Model Building & Publishing
+	* Pipelines for Regular Fetching & Retraining
+	* Deployment: Docker, Flask API
 
 Guangnan Liang:
 
-* Data Wrangling
-* Geospatial Analysis
-* EDA
-* FLASK REST API
+* Report:
+* PPT:
+* Video:
+* Work:
+	* Data Wrangling
+	* Geospatial Analysis
+	* EDA
+	* FLASK REST API
 
 ## Deployment
 1. Data Ingestion & Wrangling
