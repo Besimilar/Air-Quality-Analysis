@@ -1,0 +1,17 @@
+{
+  "name":"boston-aqi",
+  "assignNum": "final",
+  "team": 3,
+
+  "AWSAccess":"your aws accesskey",
+  "AWSSecret":"your aws secretkey",
+  "region":"your aws region",
+
+  "username" : "your epa username",
+  "password" : "your epa password",
+  "data_format" : "DMCSV",
+  "parameter_class" : "FORECAST",
+  "begin_date" : "20130101",
+  "state" : "25",
+  "county" : "025"
+}
