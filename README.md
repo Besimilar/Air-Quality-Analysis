@@ -19,21 +19,39 @@ Guangnan Liang:
 ## Deployment
 1. Data Ingestion & Wrangling
 	* Docker Hub: besimilar/advanced-data-analysis:aqi
+	* Download Link: https://s3-us-west-2.amazonaws.com/team3assignmentfinal/boston-aqi.tar
 
-2. EDA 
+2. EDA & Geospatical Analysis
 	* Docker Hub: besimilar/advanced-data-analysis:aqi
+	* Download Link: https://s3-us-west-2.amazonaws.com/team3assignmentfinal/boston-aqi-eda.zip
 
 3. Pipelines
 	* Docker Hub: besimilar/advanced-data-analysis:pipeline
+	* Download Link: https://s3-us-west-2.amazonaws.com/team3assignmentfinal/boston-aqi-pipeline.tar
 
 4. Model
 	* Azure Gallery: https://gallery.cortanaintelligence.com/Experiment/Boosted-Decision-Tree
 
 5. FLASK API
-	* Pythonanywhere: http://besimilar.pythonanywhere.com/
+	* Pythonanywhere: http://besimilar.pythonanywhere.com/prediction
+
+6. For Docker offline images
+	* You can download from links, and run your own demos
+		* Links:
+			* Data Ingestion & Wrangling: https://s3-us-west-2.amazonaws.com/team3assignmentfinal/boston-aqi.tar
+			* Pipelines: https://s3-us-west-2.amazonaws.com/team3assignmentfinal/boston-aqi-pipeline.tar
+		* Command lines:
+		```
+		$ docker load --input <dockerimages>.tar
+		```
 
 ## Instruction
-1. **Import Step Before starting your container**
+1. **Maintenance Issue**:
+	* refer to https://aqs.epa.gov/aqsweb/documents/ramltohtml.html
+	* The EPA API won't work on Sunday from 1800 to 2359.
+	* also refer to "Notes/2-Maintenance-Issue", to avoid API connection issues.
+
+2. **Import Step Before starting your container**
 	* prepare a env.list file for env variables in container
 	* refer to "env.list"
 		* AWS params: 
@@ -58,7 +76,7 @@ Guangnan Liang:
 			* change them in "config.json" in container
 			* You dont't need to change them to do a demo
 
-2. For individual parts, refer to instruction in their folder to run.
+3. For individual parts, refer to instruction in their folder to run.
 	1. Data-Ingestion: 
 		* Start container
 			```
