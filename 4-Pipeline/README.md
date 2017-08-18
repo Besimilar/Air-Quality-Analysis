@@ -1,6 +1,33 @@
 # Docker Hub
 besimilar/advanced-data-analysis:pipeline
 
+# Steps in Pipeline job
+1. For demo, the job will be run every 2 hour. If you need to run every day, please uncomment code in "Pipeline/celery.py" 
+	```
+	'run-every-2-hour': {
+        'task': 'tasks.run',
+        'schedule': crontab(minute=0, hour='*/2')
+    }
+
+	# Executes every Day morning at 8:30 a.m.
+    # 'run-every-day-morning': {
+    #     'task': 'tasks.run',
+    #     # 'schedule': crontab(hour=8, minute=30),
+    # },
+	```
+
+2. Fetch rawdata from EPA API ("fetchdata.py"):
+	* set begin-date and end-date in env.list before starting your container
+	* if You dont set end-date, it will be current date.
+
+3. Clean rawdata and save both rawdata and cleandata to local ("wrangling.py")
+
+4. Upload cleandata to AWS S3 ("awsservice.py"):
+	* set AWS params in env.list before starting your container
+
+5. Retrain Model in Azure Machine learning ("retrain.py"):
+	* set Azure params in env.list before starting your container
+
 # Instuction:
 1. Set all parameters in env.list: 
 	* This is a list of environment variables in container.
