@@ -2,7 +2,7 @@
 besimilar/advanced-data-analysis:pipeline
 
 # Steps in Pipeline job
-1. For demo, the job will be run every 2 hour. If you need to run every day, please uncomment code in "Pipeline/celery.py" 
+1. For demo, the job will be run every 2 hour. If you need to run every day, please uncomment code in "src/Pipeline/celery.py" 
 	```
 	'run-every-2-hour': {
         'task': 'tasks.run',
@@ -16,17 +16,18 @@ besimilar/advanced-data-analysis:pipeline
     # },
 	```
 
-2. Fetch rawdata from EPA API ("fetchdata.py"):
+2. Fetch rawdata from EPA API ("src/fetchdata.py"):
 	* set begin-date and end-date in env.list before starting your container
 	* if You dont set end-date, it will be current date.
 
-3. Clean rawdata and save both rawdata and cleandata to local ("wrangling.py")
+3. Clean rawdata and save both rawdata and cleandata to local ("src/wrangling.py")
 
-4. Upload cleandata to AWS S3 ("awsservice.py"):
+4. Upload cleandata to AWS S3 ("src/awsservice.py"):
 	* set AWS params in env.list before starting your container
 
-5. Retrain Model in Azure Machine learning ("retrain.py"):
+5. Retrain Model in Azure Machine learning ("src/retrain.py"):
 	* set Azure params in env.list before starting your container
+	* for details, you can also see notebook in "notebook/retrain.ipynb"
 
 # Instuction:
 1. Set all parameters in env.list: 
