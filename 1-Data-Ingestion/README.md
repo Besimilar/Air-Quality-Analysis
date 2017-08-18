@@ -1,5 +1,5 @@
 # Docker Hub
-besimilar/advanced-data-analysis:pipeline
+besimilar/advanced-data-analysis:aqi
 
 # Steps in Data Ingestion
 1. Fetch rawdata from EPA API ("src/fetchdata.py"):
