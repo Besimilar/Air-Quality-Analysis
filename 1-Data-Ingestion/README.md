@@ -4,7 +4,6 @@ besimilar/advanced-data-analysis:pipeline
 # Steps in Data Ingestion
 1. Fetch rawdata from EPA API ("src/fetchdata.py"):
 	* set begin-date and end-date in env.list before starting your container
-	* if You dont set end-date, it will be current date.
 
 2. Clean rawdata and save both rawdata and cleandata to local ("src/wrangling.py")
 	* for details, refer to "notebook/preprocess*.ipynb"

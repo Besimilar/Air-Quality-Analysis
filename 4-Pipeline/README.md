@@ -18,7 +18,6 @@ besimilar/advanced-data-analysis:pipeline
 
 2. Fetch rawdata from EPA API ("src/fetchdata.py"):
 	* set begin-date and end-date in env.list before starting your container
-	* if You dont set end-date, it will be current date.
 
 3. Clean rawdata and save both rawdata and cleandata to local ("src/wrangling.py")
 
@@ -40,7 +39,7 @@ besimilar/advanced-data-analysis:pipeline
 			* EPAUSERNAME: EPA API username
 			* EPAPASSWORD: EPA API password
 			* BDATE: the first day of dataset (default: 20130101)
-			* EDATE: the last day of dataset (default: current date)
+			* EDATE: the last day of dataset: (default: current date)
 		* Azure params:
 			* ACCOUNTNAME: azure storage account name
 			* ACCOUNTKEY: azure storage primary key
