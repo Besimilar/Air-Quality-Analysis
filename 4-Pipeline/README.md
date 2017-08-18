@@ -27,6 +27,8 @@ besimilar/advanced-data-analysis:pipeline
 5. Retrain Model in Azure Machine learning ("src/retrain.py"):
 	* set Azure params in env.list before starting your container
 	* for details, you can also see notebook in "notebook/retrain.ipynb"
+	* It will download retrain result to container as "retrain-model-bdate-edate.csv"
+	* You can also download retrain result from the link shown in terminal
 
 # Instuction:
 1. Set all parameters in env.list: 
