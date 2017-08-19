@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Classification</title>
+<style>
+div.relative {
+    position: relative;
+    left: 400px;
+}
+p.big {
+	line-height: 200%
+}
+</style>
+</head>
+<body>
+
+<div class="relative">
+<h1>Classification</h1>
+<form action="respond" method="post">
+<p class="big">
+<font size="4">
+	Barometric pressure: <input type="range" id="aInputId" min="0" max="100" step="1" oninput="aOutputId.value = aInputId.value" onchange="showVal(this.value)" name="Barometric_pressure" value={{Barometric_pressure}}>
+	<output name="aOutputName" id="aOutputId">50</output><br>
+
+	Black carbon PM2.5 STP: <input type="range" id="bInputId" min="0" max="100" step="1" oninput="bOutputId.value = bInputId.value" onchange="showVal(this.value)" name="Black_carbon_PM25_STP" value={{Black_carbon_PM25_STP}}>
+	<output name="bOutputName" id="bOutputId">50</output><br>
+
+	Carbon monoxide: <input type="range" id="cInputId" min="0" max="100" step="1" oninput="cOutputId.value = cInputId.value" onchange="showVal(this.value)" name="Carbon_monoxide" value={{Carbon_monoxide}}>
+	<output name="cOutputName" id="cOutputId">50</output><br>
+
+	Nitric oxide (NO): <input type="range" id="dInputId" min="0" max="100" step="1" oninput="dOutputId.value = dInputId.value" onchange="showVal(this.value)" name="Nitric_oxide" value={{Nitric_oxide}}>
+	<output name="dOutputName" id="dOutputId">50</output><br>
+
+	Nitrogen dioxide (NO2): <input type="range" id="eInputId" min="0" max="100" step="1" oninput="eOutputId.value = eInputId.value" onchange="showVal(this.value)" name="Nitrogen_dioxide" value={{Nitrogen_dioxide}}>
+	<output name="eOutputName" id="eOutputId">50</output><br>
+
+	Outdoor Temperature: <input type="range" id="fInputId" min="0" max="100" step="1" oninput="fOutputId.value = fInputId.value" onchange="showVal(this.value)" name="Outdoor_Temperature" value={{Outdoor_Temperature}}>
+	<output name="fOutputName" id="fOutputId">50</output><br>
+
+	Oxides of nitrogen (NOx): <input type="range" id="gInputId" min="0" max="100" step="1" oninput="gOutputId.value = gInputId.value" onchange="showVal(this.value)" name="Oxides_of_nitrogen" value={{Oxides_of_nitrogen}}>
+	<output name="gOutputName" id="gOutputId">50</output><br>
+
+	Ozone: <input type="range" id="hInputId" min="0" max="100" step="1" oninput="hOutputId.value = hInputId.value" onchange="showVal(this.value)" name="Ozone" value={{Ozone}}>
+	<output name="hOutputName" id="hOutputId">50</output><br>
+
+	PM10 - LC: <input type="range" id="iInputId" min="0" max="100" step="1" oninput="iOutputId.value = iInputId.value" onchange="showVal(this.value)" name="PM10_LC" value={{PM10_LC}}>
+	<output name="iOutputName" id="iOutputId">50</output><br>
+
+	PM10 Total 0-10um STP: <input type="range" id="jInputId" min="0" max="100" step="1" oninput="jOutputId.value = jInputId.value" onchange="showVal(this.value)" name="PM10_Total_STP" value={{PM10_Total_STP}}>
+	<output name="jOutputName" id="jOutputId">50</output><br>
+
+	PM10-2.5 - Local Conditions: <input type="range" id="kInputId" min="0" max="100" step="1" oninput="kOutputId.value = kInputId.value" onchange="showVal(this.value)" name="PM1025_Local_Conditions" value={{PM1025_Local_Conditions}}>
+	<output name="kOutputName" id="kOutputId">50</output><br>
+
+	Reactive oxides of nitrogen (NOy): <input type="range" id="lInputId" min="0" max="100" step="1" oninput="lOutputId.value = lInputId.value" onchange="showVal(this.value)" name="Reactive_oxides_of_nitrogen" value={{Reactive_oxides_of_nitrogen}}>
+	<output name="lOutputName" id="lOutputId">50</output><br>
+
+	Relative Humidity: <input type="range" id="mInputId" min="0" max="100" step="1" oninput="mOutputId.value = mInputId.value" onchange="showVal(this.value)" name="Relative_Humidity" value={{Relative_Humidity}}>
+	<output name="mOutputName" id="mOutputId">50</output><br>
+
+	Solar radiation: <input type="range" id="nInputId" min="0" max="100" step="1" oninput="nOutputId.value = nInputId.value" onchange="showVal(this.value)" name="Solar_radiation" value={{Solar_radiation}}>
+	<output name="nOutputName" id="nOutputId">50</output><br>
+
+	Sulfate (TSP) STP: <input type="range" id="oInputId" min="0" max="100" step="1" oninput="oOutputId.value = oInputId.value" onchange="showVal(this.value)" name="Sulfate_STP" value={{Sulfate_STP}}>
+	<output name="oOutputName" id="oOutputId">50</output><br>
+
+	Sulfur dioxide: <input type="range" id="pInputId" min="0" max="100" step="1" oninput="pOutputId.value = pInputId.value" onchange="showVal(this.value)" name="Sulfur_dioxide" value={{Sulfur_dioxide}}>
+	<output name="pOutputName" id="pOutputId">50</output><br>
+
+	Total NMOC (non-methane organic compound): <input type="range" id="qInputId" min="0" max="100" step="1" oninput="qOutputId.value = qInputId.value" onchange="showVal(this.value)" name="Total_NMOC" value={{Total_NMOC}}>
+	<output name="qOutputName" id="qOutputId">50</output><br>
+
+	Wind Direction - Resultant: <input type="range" id="rInputId" min="0" max="100" step="1" oninput="rOutputId.value = rInputId.value" onchange="showVal(this.value)" name="Wind_Direction_Resultant" value={{Wind_Direction_Resultant}}>
+	<output name="rOutputName" id="rOutputId">50</output><br>
+
+	Wind Direction - Scalar: <input type="range" id="sInputId" min="0" max="100" step="1" oninput="sOutputId.value = sInputId.value" onchange="showVal(this.value)" name="Wind_Direction_Scalar" value={{Wind_Direction_Scalar}}>
+	<output name="sOutputName" id="sOutputId">50</output><br>
+
+	Wind Speed - Resultant: <input type="range" id="tInputId" min="0" max="100" step="1" oninput="tOutputId.value = tInputId.value" onchange="showVal(this.value)" name="Wind_Speed_Resultant" value={{Wind_Speed_Resultant}}>
+	<output name="tOutputName" id="tOutputId">50</output><br>
+
+	Wind Speed - Scalar: <input type="range" id="uInputId" min="0" max="100" step="1" oninput="uOutputId.value = uInputId.value" onchange="showVal(this.value)" name="Wind_Speed_Scalar" value={{Wind_Speed_Scalar}}>
+	<output name="uOutputName" id="uOutputId">50</output><br>
+	
+	<input type="submit">
+</font>
+</p>
+</form>
+</div>
+</body>
+</html>
