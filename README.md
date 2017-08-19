@@ -18,9 +18,9 @@ Hongwei Hu:
 
 Guangnan Liang:
 
-* Report:
-* PPT:
-* Video:
+* Report: 2-Guangnan_Liang.docx
+* PPT: 2-Guangnan_Liang.pptx
+* Video: https://www.screencast.com/t/jg4XsmF4V8U
 * Work:
 	* Data Wrangling
 	* Geospatial Analysis
