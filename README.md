@@ -7,6 +7,9 @@ Hongwei Hu:
 * Report: 1-Hongwei_Hu.docx
 * PPT: 1-Hongwei_Hu.pptx
 * Video:
+	* https://www.screencast.com/t/XOTvPX4B
+	* https://www.screencast.com/t/kxilOL9v
+	* https://www.screencast.com/t/EZnfTIGRNV8
 * Work:
 	* Data Fetching & Upload Automation
 	* Azure Machine Learning Model Building & Publishing
@@ -29,8 +32,7 @@ Guangnan Liang:
 	* Docker Hub: besimilar/advanced-data-analysis:aqi
 	* Download Link: https://s3-us-west-2.amazonaws.com/team3assignmentfinal/boston-aqi.tar
 
-2. EDA & Geospatical Analysis
-	* Docker Hub: besimilar/advanced-data-analysis:aqi
+2. EDA
 	* Download Link: https://s3-us-west-2.amazonaws.com/team3assignmentfinal/boston-aqi-eda.zip
 
 3. Pipelines
