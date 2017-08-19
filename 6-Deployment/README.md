@@ -2,8 +2,7 @@
 * Docker Hub: besimilar/advanced-data-analysis:aqi
 * Download Link: https://s3-us-west-2.amazonaws.com/team3assignmentfinal/boston-aqi.tar
 
-# EDA & Geospatical Analysis
-* Docker Hub: besimilar/advanced-data-analysis:aqi
+# EDA
 * Download Link: https://s3-us-west-2.amazonaws.com/team3assignmentfinal/boston-aqi-eda.zip
 
 # Pipelines
